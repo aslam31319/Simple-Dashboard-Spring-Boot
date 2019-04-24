@@ -1,0 +1,60 @@
+@charset "ISO-8859-1";
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+body{
+	text-align: center;
+
+	height: 100%;
+    margin: 0;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(to bottom right, #ed562d ,#ff8949) ;
+	background-attachment: fixed;
+
+}
+.nav-link{
+	color: white !important;
+	font-weight: bold
+}
+.nav-link:hover{
+	
+	color:black !important;
+}
+
+
+
+
+
+
+.hidden {
+  opacity:0;
+}
+.console-container {
+ 
+  font-family:Khula;
+  font-size:4em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color:white ;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+	margin:auto;
+	transition: 1s font-size;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+@media screen and (max-width:800px){
+	.console-container {
+		font-size:2em;
+		height:100px;
+  width:300px;
+	}
+}

@@ -1,0 +1,39 @@
+@charset "ISO-8859-1";
+
+.dataTables_wrapper {
+	display: none;
+	position: relative;
+	top: 15%;
+	left: 10%;
+	width: max-content;
+	background-color: white;
+	border: solid 1px;
+	border-radius: 5px;
+	top: 8%;
+	left: 30%;
+	margin-top: 10px;
+}
+
+.col-sm-12 {
+	padding-left: 40px;
+}
+
+.table {
+	font-size: small;
+}
+
+.dataTables_length {
+	padding: 5px;
+}
+
+.dt-buttons {
+	padding: 5px;
+}
+
+.dataTables_paginate {
+	padding: 5px;
+}
+
+.dataTables_filter {
+	padding: 5px;
+}
