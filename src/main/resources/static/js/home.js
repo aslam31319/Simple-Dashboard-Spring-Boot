@@ -52,9 +52,9 @@ $(document).ready(
                     lengthMenu: [ 5,10, 25, 50 ],
                     pageLength : 5,
                     ajax : {
-                        url : "getallemp",
+                        url : "api/getAllEmploy",
                         dataSrc : '',
-                        type : "POST"
+                        type : "GET"
                     },
                     columns : [ {
                         data : "id"

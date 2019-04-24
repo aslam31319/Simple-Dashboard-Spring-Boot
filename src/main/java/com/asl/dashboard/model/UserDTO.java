@@ -1,23 +1,16 @@
 package com.asl.dashboard.model;
 
-import java.io.Serializable;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.hibernate.annotations.GenericGenerator;
-
 @Entity
 @Table(name = "User_Data_New")
-public class UserDTO implements Serializable {
+public class UserDTO {
 
 	@Column(name = "user_id")
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int userId;
+	private long userId;
 
 	@Column(name = "first_name")
 	private String firstName;
@@ -56,11 +49,11 @@ public class UserDTO implements Serializable {
 	@Column(name = "role")
 	private String role;
 	
-	public int getUserId() {
+	public long getUserId() {
 		return userId;
 	}
 
-	public void setUserId(int userId) {
+	public void setUserId(long userId) {
 		this.userId = userId;
 	}
 
