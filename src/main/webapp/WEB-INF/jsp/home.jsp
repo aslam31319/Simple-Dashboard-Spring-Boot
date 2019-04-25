@@ -38,8 +38,8 @@
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active"><img src="images/logo.png"
-						alt="" height="30px"></li>
+					<li class="nav-item active"><img src="images/logo.png" alt=""
+						height="30px"></li>
 
 
 				</ul>
@@ -58,13 +58,12 @@
 							<li class="dropdown-item" data-toggle="modal"
 								data-target="#myModal" id="csvli"><a href="#" id="CSV">CSV</a></li>
 						</ul></li>
-					<li class="nav-link"><img src="images/cam.png"
-						class="camimg" onclick="generateScreenshot()" height="30px"
-						width="30px"></li>
+					<li class="nav-link"><img src="images/cam.png" class="camimg"
+						onclick="generateScreenshot()" height="30px" width="30px"></li>
 					<li class="nav-link"><input type="button"
 						class="btn btn-outline-light btn-sm" id="SwitchD"
 						value="Show Table" /></li>
-						<li class="nav-link"><a href="chpwdform"
+					<li class="nav-link"><a href="changePassword"
 						class="btn btn-outline-light btn-sm">Change password</a>
 					<li class="nav-link"><a href="logout"
 						class="btn btn-outline-light btn-sm">Logout</a>
