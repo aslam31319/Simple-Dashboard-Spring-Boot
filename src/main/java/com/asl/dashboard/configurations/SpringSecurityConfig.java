@@ -30,6 +30,7 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 		.antMatchers("/download").hasAnyRole("ADMIN", "USER")
 		.antMatchers("sendEmailWithFile").hasAnyRole("ADMIN", "USER")
 		.antMatchers("/user").hasAnyRole("ADMIN", "USER")
+		.antMatchers("/admin**").hasRole("ADMIN")
 		.and()
 		.formLogin()
 		.loginPage("/login")
