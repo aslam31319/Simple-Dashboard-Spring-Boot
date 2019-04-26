@@ -86,7 +86,7 @@ public class MainController {
 	
 	
 	// forgot password
-	@PostMapping("forgot")
+	@PostMapping("/forgot")
 	public String forgotPassword(@RequestParam("recemail") String email, Model model) {
 
 		if (userService.forgotPass(email)) {
@@ -100,14 +100,14 @@ public class MainController {
 
 	}
 	
-	@GetMapping("download")
+	@GetMapping("/download")
 	public void generate(HttpServletRequest req, HttpServletResponse resp, @RequestParam("fileEXT") String fileEXT) {
 
 		fileService.download(req, resp,fileEXT);
 
 	}
 	
-	@PostMapping("sendEmailWithFile")
+	@PostMapping("/sendEmailWithFile")
 	public @ResponseBody String sentEmailWithFile(HttpServletRequest req, @ModelAttribute MailDTO mail) {
 		
 		mail.setMailTo(SecurityContextHolder.getContext().getAuthentication().getName());
